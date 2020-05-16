@@ -7,7 +7,7 @@ tags: 알고리즘 프로그래머스 Python3
 comments: true
 ---
 
-## Summer/Winter Coding(~2018) - 주식가격
+## Summer/Winter Coding(~2018) - 스킬트리
 
 * 문제 링크 : [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993?language=python3)
 
