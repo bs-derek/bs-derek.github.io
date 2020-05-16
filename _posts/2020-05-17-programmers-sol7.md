@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[프로그래머스] 탑"
+title:  "[프로그래머스] 멀쩡한 사각형"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
