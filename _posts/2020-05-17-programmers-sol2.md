@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[프로그래머스] 프린터"
+title:  "[프로그래머스] 주식가격"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
