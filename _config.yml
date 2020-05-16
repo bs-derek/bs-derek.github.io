@@ -2,18 +2,18 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               TheoryDB
+title:               방구석 백수의 발버둥 공간
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://theorydb.github.io
+url:                 https://bs-derek.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "All roads lead to data."
+tagline:             "살아남기 위해 **아등바등 폴짝폴짝**"
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
@@ -23,7 +23,7 @@ description:         >
 # This should be the same author as first entry in `_data/authors.yml`
 author:
   name:              min
-  email:             theorydb@gmail.com
+  email:             6544kh@naver.com
 
 # Fallback image and color
 image:               /assets/img/main_left.jpg
@@ -51,13 +51,13 @@ disqus: True
 disqus_shortname:    theorydb
 
 # This text will appear in the footer of every page. Markdown enabled.
-copyright:           '&copy; 2019.04. by theorydb'
+copyright:           '&copy; 2020. by bs-derek'
 
 # Format of the permalinks
 permalink:           pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:            20
+paginate:            10
 paginate_path:       '/page-:num/'
 
 # If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
