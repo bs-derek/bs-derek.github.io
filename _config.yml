@@ -18,7 +18,7 @@ tagline:             "살아남기 위해 **아등바등 폴짝폴짝**"
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Data science enthusiast and addict :)
+  숨만 쉬어도 돈을 벌수 있다면 얼마나 좋을까..
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
