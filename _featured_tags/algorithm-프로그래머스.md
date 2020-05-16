@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: Programmers
-slug: programmers
+title: 프로그래머스
+slug: 프로그래머스
 category: algorithm
 menu: false
 order: 3
