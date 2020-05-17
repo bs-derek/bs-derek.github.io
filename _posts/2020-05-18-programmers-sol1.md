@@ -16,7 +16,7 @@ comments: true
 #### 첫 번째 풀이
 
 오늘 집중을 못해서 그런가,, 되게 오랫동안 붙잡고 있었다.  
-일단은 처음 푼 코드는 다음과 같다. 테스트 5에서 시간 초과로 실패가 나온다. 아무래도 sum을 남발해서 그런 것 같다.
+일단은 처음 푼 코드는 다음과 같다. 테스트 5에서 시간 초과로 실패가 나온다. 아무래도 sum 함수를 남발해서 그런 것 같다.
 
 ```python
 def solution(bridge_length, weight, truck_weights):
@@ -49,7 +49,7 @@ def solution(bridge_length, weight, truck_weights):
 
 #### 두 번째 풀이
 
-sum 함수를 없애고 배열에서 들어가고 빠질 때 마다 sum을 갱신해주니 효율성이 훨씬 좋아졌다. 하지만, 코드가 많이 더러운 것 같다. 다시 풀때는 좀더 간결하게 풀어봐야겠다.
+sum 함수를 없애고 배열에서 들어가고 빠질 때 마다 sum을 직접 계산해서 갱신해주니 효율성이 훨씬 좋아졌다. 하지만, 코드가 많이 더러운 것 같다. 다시 풀때는 좀더 간결하게 풀어봐야겠다.
 
 ```python
 def solution(bridge_length, weight, truck_weights):
