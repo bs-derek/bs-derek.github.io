@@ -32,12 +32,3 @@
 <br/>{% endif %}
 
 <br/>
-  {{ post.content }}
-    <p class="read-more"><a class="heading" href="{{ post.url | relative_url }}" data-flip="title">Continue reading </a></p>
-  {% endunless %}
-
-</article>
-{% unless include.link_title %}
-
-  <br/>
-{% endunless %}
