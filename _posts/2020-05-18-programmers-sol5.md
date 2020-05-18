@@ -9,7 +9,7 @@ comments: true
 
 ## 탐욕법(Greedy) - 체육복
 
-* 문제 링크 : [체육복]](https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3#)
+* 문제 링크 : [체육복](https://programmers.co.kr/learn/courses/30/lessons/42862?language=python3#)
 
 사용 언어 : Python3
 
