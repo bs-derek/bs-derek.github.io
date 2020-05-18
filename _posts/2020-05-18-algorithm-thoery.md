@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "투 포인터"
+title:  "[개념정리] 투 포인터"
 # subtitle: 
 categories: algorithm
-tags: 알고리즘 이론 개념정리
+tags: 알고리즘 개념정리
 comments: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: 이론
-slug: 이론
+title: 개념정리
+slug: 개념정리
 category: algorithm
 menu: false
 order: 1
