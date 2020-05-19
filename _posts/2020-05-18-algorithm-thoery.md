@@ -5,6 +5,8 @@ title:  "[업데이트 예정] 투 포인터"
 categories: algorithm
 tags: 알고리즘 개념정리
 comments: true
+# 공개:
+published : false
 ---
 
 ## 투 포인터

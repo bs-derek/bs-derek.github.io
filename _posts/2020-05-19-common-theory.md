@@ -5,6 +5,8 @@ title:  "[업데이트 예정] 블랙박스 vs 화이트박스"
 categories: common
 tags: 기초지식 개념정리
 comments: true
+# 공개여부:
+published : false
 ---
 
 ## 블랙박스 vs 화이트박스
