@@ -27,7 +27,6 @@ author:
 
 # Fallback image and color
 image:               /assets/img/main_left.jpg
-og_image:            /assets/img/me.jpg
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
@@ -49,7 +48,7 @@ google_analytics:    UA-137374202-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus: True
-disqus_shortname:    theorydb
+disqus_shortname:    bs-dereks-blog
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; 2020. by bs-derek'
