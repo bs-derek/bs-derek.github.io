@@ -20,7 +20,7 @@ comments: true
 
 힙에 대한 지식이 없다면 아래의 링크를 참고하자.
 
-* 개념 정리 : [[개념정리] 힙(Heap)](https://https://bs-derek.github.io/algorithm/2020/05/24/algorithm-theory1)
+* 개념 링크 : [[개념정리] 힙(Heap)](https://https://bs-derek.github.io/algorithm/2020/05/24/algorithm-theory1)
 
 ```python
 def solution(scoville, K):
