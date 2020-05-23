@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[프로그래머스] 힙"
+title:  "[프로그래머스] 더 맵게"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
