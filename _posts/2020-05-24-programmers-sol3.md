@@ -5,6 +5,8 @@ title:  "[프로그래머스] 소수 찾기"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 완전탐색 - 소수 찾기

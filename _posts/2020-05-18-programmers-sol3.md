@@ -5,6 +5,8 @@ title:  "[프로그래머스] 문자열 압축"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 2020 KAKAO BLIND RECRUITMENT - 문자열 압축

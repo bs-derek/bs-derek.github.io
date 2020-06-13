@@ -5,6 +5,8 @@ title:  "[프로그래머스] 멀쩡한 사각형"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## Summer/Winter Coding(2019) - 멀쩡한 사각형

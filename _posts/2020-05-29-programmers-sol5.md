@@ -5,6 +5,8 @@ title:  "[프로그래머스] 나누어 떨어지는 숫자 배열"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 연습문제 - 나누어 떨어지는 숫자 배열

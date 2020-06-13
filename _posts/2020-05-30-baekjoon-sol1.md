@@ -5,6 +5,8 @@ title:  "[백준] 15649번 - N과 M(1)"
 categories: algorithm
 tags: 알고리즘 백준 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 15649번 - N과 M(1)

@@ -5,6 +5,8 @@ title:  "[프로그래머스] 완주하지 못한 선수"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 해시 - 완주하지 못한 선수

@@ -5,6 +5,8 @@ title:  "[프로그래머스] 같은 숫자는 싫어"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 연습문제 - 같은 숫자는 싫어

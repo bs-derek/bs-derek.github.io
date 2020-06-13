@@ -5,6 +5,8 @@ title:  "[프로그래머스] 크레인 인형뽑기 게임"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 2019 카카오 개발자 겨울 인턴십 - 크레인 인형뽑기 게임

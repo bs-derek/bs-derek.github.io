@@ -5,6 +5,8 @@ title:  "[프로그래머스] 기능개발"
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3
 comments: true
+# 공개여부:
+published : true
 ---
 
 ## 스택/큐 - 기능개발
