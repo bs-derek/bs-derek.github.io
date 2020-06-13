@@ -3,7 +3,7 @@ layout: post
 title:  "[C++] 나를 위한 STL 정리 (계속 Update 예정)"
 # subtitle: 
 categories: algorithm
-tags: 알고리즘 C++ Etc etc
+tags: 알고리즘 C++ etc
 comments: true
 # 공개여부:
 published : true
