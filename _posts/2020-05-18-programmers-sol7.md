@@ -41,3 +41,28 @@ def solution(a, b):
         
     return answer
 ```
+
+사용 언어 : C++
+
+```cpp
+#include <string>
+#include <vector>
+
+using namespace std;
+
+string solution(int a, int b) {
+    string answer = "";
+    int days[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    int sum = 0;
+    for(int i=0; i<a-1; i++){sum+=days[i];}
+    sum += (b-1);
+    if(sum%7==0){answer="FRI";}
+    else if(sum%7==1){answer="SAT";}
+    else if(sum%7==2){answer="SUN";}
+    else if(sum%7==3){answer="MON";}
+    else if(sum%7==4){answer="TUE";}
+    else if(sum%7==5){answer="WED";}
+    else{answer="THU";}
+    return answer;
+}
+```
