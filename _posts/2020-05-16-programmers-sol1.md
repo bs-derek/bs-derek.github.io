@@ -14,6 +14,7 @@ published : true
 * 문제 링크 : [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 
 사용 언어 : Python3
+
 ```python
 def solution(board, moves):
     answer = 0
@@ -39,4 +40,44 @@ def solution(board, moves):
                 bucket.pop()
                 answer += 2
     return answer
+```
+
+사용 언어 : C++
+
+```cpp
+#include <string>
+#include <vector>
+#include <iostream>
+#include <deque>
+
+using namespace std;
+
+int solution(vector<vector<int>> board, vector<int> moves) {
+    int answer = 0;
+    int board_count[31];
+    deque<int> bucket;
+    for(int i=0; i<board.size(); i++){
+        for(int j=0; j<board.size(); j++){
+            if(board[j][i] != 0) {
+                board_count[i] = j;
+                break;
+            }
+        }
+    }
+    
+    for(int i=0; i<moves.size(); i++){
+        if (board_count[moves[i]-1] == board.size()){continue;}
+        else{
+            bucket.push_back(board[board_count[moves[i]-1]][moves[i]-1]);
+            board_count[moves[i]-1] += 1;
+            
+            if (bucket.size() > 1 && bucket[bucket.size()-1] == bucket[bucket.size()-2]){
+                bucket.pop_back();
+                bucket.pop_back();
+                answer += 2; 
+            }
+        }
+    }
+    return answer;
+}
 ```
