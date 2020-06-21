@@ -13,11 +13,11 @@ published : true
 
 * 문제 링크 : [N과 M(1)](https://www.acmicpc.net/problem/15649)
 
-사용 언어 : Python3
-
 DFS를 이용한 재귀함수 다시 공부할겸, 순열과 조합 라이브러리 사용할 겸 다시 풀어보는 N과 M시리즈
 
 ### 첫 번째 풀이(python 라이브러리 사용)
+
+사용 언어 : Python3
 
 ```python
 import sys
@@ -33,6 +33,7 @@ for i in itertools.permutations([j for j in range(1, N+1)], M):
 
 효율성 높여보겠다고 deque 쓰고 sys.stdin 썼는데, 우째서 예전 코드보다 메모리랑 시간 둘 다 많이 쓴 거지..?
 
+사용 언어 : Python3
 
 ```python
 import sys
@@ -57,4 +58,56 @@ def dfs(start):
         isVisited[i] = 0
 
 dfs(0)
+```
+
+### 세 번째 풀이
+
+어쩌다 보니 C++로 코딩테스트를 볼 일이 생겨 다시 짜보게 되었다.
+
+사용 언어 : C++
+
+```cpp
+#include <iostream>
+#include <cstring>
+#include <vector>
+
+using namespace std;
+
+int N, M;
+int arr[8];
+int selected[8];
+vector<int> V;
+
+void Print(){
+	for(int i=0; i<V.size(); i++){
+		cout<<V[i]<<" ";
+	}
+	cout<<"\n";
+}
+
+void DFS(int count){
+	if(count == M){
+		Print();
+		return;
+	}
+
+	for(int i=0; i<N; i++){
+		if(selected[i] == 1) continue;
+		selected[i] = 1;
+		V.push_back(arr[i]);
+		DFS(count+1);
+		selected[i] = 0;
+		V.pop_back();
+	}
+}
+
+int main(){
+	cin>>N>>M;
+
+	for(int i=0; i<N; i++){
+		arr[i] = i+1;
+	}
+
+	DFS(0);
+}
 ```
