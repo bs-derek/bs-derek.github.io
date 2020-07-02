@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "서울에서 김서방 찾기"
+title:  "[프로그래머스] 서울에서 김서방 찾기"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3

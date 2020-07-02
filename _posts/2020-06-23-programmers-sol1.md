@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "가장 큰 정사각형 찾기"
+title:  "[프로그래머스] 가장 큰 정사각형 찾기"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3

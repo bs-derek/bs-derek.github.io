@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "문자열 내 p와 y의 개수"
+title:  "[프로그래머스] 문자열 내 p와 y의 개수"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 프로그래머스 Python3 C++
