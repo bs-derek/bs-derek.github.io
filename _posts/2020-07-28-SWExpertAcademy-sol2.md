@@ -13,7 +13,7 @@ published : true
 
 사용 언어 : Java
 
-```Java
+```java
 import java.util.Scanner;
 class Solution
 {

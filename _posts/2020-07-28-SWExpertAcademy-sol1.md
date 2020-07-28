@@ -13,7 +13,7 @@ published : true
 
 사용 언어 : Java
 
-```Java
+```java
 import java.util.Scanner;
 import java.util.Arrays;
  
@@ -21,7 +21,7 @@ class Solution
 {
     public static void main(String args[]) throws Exception
     {
-                        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int i=0;
         int[] arr = new int[100];
         for(int test_case = 1; test_case <= 10; test_case++)
