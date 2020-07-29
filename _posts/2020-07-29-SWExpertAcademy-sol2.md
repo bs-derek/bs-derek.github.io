@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "[SWEA] 7272. ¾È°æÀÌ ¾ø¾î!"
+title:  "[SWEA] 7272. ì•ˆê²½ì´ ì—†ì–´!"
 # subtitle: 
 categories: algorithm
-tags: ¾Ë°í¸®Áò SWEA Java
+tags: ì•Œê³ ë¦¬ì¦˜ SWEA Java
 comments: true
-# °ø°³¿©ºÎ:
+# ê³µê°œì—¬ë¶€:
 published : true
 ---
 
-## SW Expert Academy - 7272. ¾È°æÀÌ ¾ø¾î!
+## SW Expert Academy - 7272. ì•ˆê²½ì´ ì—†ì–´!
 
-»ç¿ë ¾ğ¾î : Java
-
+ì‚¬ìš© ì–¸ì–´ : Java
+ 
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
