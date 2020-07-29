@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[SWEA] 1873. 상호의 배틀필드"
+title:  "[SWEA] 7272. 안경이 없어!"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 SWEA Java
@@ -9,7 +9,7 @@ comments: true
 published : true
 ---
 
-## SW Expert Academy - 1873. 상호의 배틀필드
+## SW Expert Academy - 7272. 안경이 없어!
 
 사용 언어 : Java
 
