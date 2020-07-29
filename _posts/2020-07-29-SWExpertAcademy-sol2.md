@@ -14,122 +14,62 @@ published : true
 사용 언어 : Java
 
 ```java
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
  
 class Solution
 {
     public static void main(String args[]) throws Exception
     {
-           Scanner sc = new Scanner(System.in);
-        int T;
-        T=sc.nextInt();
-        char[][] map = new char[20][20];
-        for(int test_case = 1; test_case <= T; test_case++) {
-            int H = sc.nextInt();
-            int W = sc.nextInt();
-            int x_pos=0, y_pos=0;
-            char current_dir = ' ';
-            for(int y=0; y<H; y++) {
-                String s = sc.next();
-                for(int x=0; x<W; x++) {
-                    map[y][x] = s.charAt(x);
-                    if(map[y][x] == '>' || map[y][x] == '<' || map[y][x] == '^' || map[y][x] == 'v') {
-                        y_pos = y;
-                        x_pos = x;
-                        current_dir=map[y][x];
-                    }
-                }
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        int T = Integer.parseInt(in.readLine());
+        for(int test_case = 1; test_case <= T; test_case++)
+        {
+            StringTokenizer st = new StringTokenizer(in.readLine());
+            String a = st.nextToken();
+            String b = st.nextToken();
+            if(a.length() != b.length()) {
+                System.out.print("#" + test_case + " ");
+                System.out.println("DIFF");
+                continue;
             }
-             
-            int N = sc.nextInt();
-            String order = sc.next();
-             
-            for(int i=0; i<N; i++) {
-                if(order.charAt(i) == 'U') {
-                    current_dir = '^';
-                    map[y_pos][x_pos] = current_dir;
-                    if(y_pos - 1 >= 0 && map[y_pos-1][x_pos] == '.') {
-                        map[y_pos--][x_pos] = '.';
-                        map[y_pos][x_pos] = current_dir;
+            else {
+                int flag = 0;
+                for(int i=0; i<a.length(); i++) {
+                    if(a.charAt(i) == 'C' || a.charAt(i) == 'E' || a.charAt(i) == 'F' ||
+                            a.charAt(i) == 'G' || a.charAt(i) == 'H' || a.charAt(i) == 'I' ||
+                            a.charAt(i) == 'J' || a.charAt(i) == 'K' || a.charAt(i) == 'L' ||
+                            a.charAt(i) == 'M' || a.charAt(i) == 'N' || a.charAt(i) == 'S' ||
+                            a.charAt(i) == 'T' || a.charAt(i) == 'U' || a.charAt(i) == 'V' ||
+                            a.charAt(i) == 'W' || a.charAt(i) == 'X' || a.charAt(i) == 'Y' ||
+                            a.charAt(i) == 'Z') {
+                        if(b.charAt(i) == 'C' || b.charAt(i) == 'E' || b.charAt(i) == 'F' ||
+                            b.charAt(i) == 'G' || b.charAt(i) == 'H' || b.charAt(i) == 'I' ||
+                            b.charAt(i) == 'J' || b.charAt(i) == 'K' || b.charAt(i) == 'L' ||
+                            b.charAt(i) == 'M' || b.charAt(i) == 'N' || b.charAt(i) == 'S' ||
+                            b.charAt(i) == 'T' || b.charAt(i) == 'U' || b.charAt(i) == 'V' ||
+                            b.charAt(i) == 'W' || b.charAt(i) == 'X' || b.charAt(i) == 'Y' ||
+                            b.charAt(i) == 'Z') continue;
+                        else {flag = 1; break;}
                     }
-                }
-                else if(order.charAt(i) == 'D') {
-                    current_dir = 'v';
-                    map[y_pos][x_pos] = current_dir;
-                    if(y_pos + 1 < H && map[y_pos+1][x_pos] == '.') {
-                        map[y_pos++][x_pos] = '.';
-                        map[y_pos][x_pos] = current_dir;
-                    }
-                }
-                else if(order.charAt(i) == 'L') {
-                    current_dir = '<';
-                    map[y_pos][x_pos] = current_dir;
-                    if(x_pos - 1 >= 0 && map[y_pos][x_pos - 1] == '.') {
-                        map[y_pos][x_pos--] = '.';
-                        map[y_pos][x_pos] = current_dir;
-                    }
-                }
-                else if(order.charAt(i) == 'R') {
-                    current_dir = '>';
-                    map[y_pos][x_pos] = current_dir;
-                    if(x_pos + 1 < W && map[y_pos][x_pos + 1] == '.') {
-                        map[y_pos][x_pos++] = '.';
-                        map[y_pos][x_pos] = current_dir;
-                    }
-                }
-                else {
-                    int bullet_y_pos = y_pos;
-                    int bullet_x_pos = x_pos;
-                    if(current_dir == '^') {
-                        while(bullet_y_pos>0) {
-                            if(map[--bullet_y_pos][bullet_x_pos]=='*') {
-                                map[bullet_y_pos][bullet_x_pos] = '.';
-                                break;
-                            }
-                            else if(map[bullet_y_pos][bullet_x_pos] == '#') break;
-                            else continue;
-                        }
-                    }
-                    else if(current_dir == 'v') {
-                        while(bullet_y_pos<H-1) {
-                            if(map[++bullet_y_pos][bullet_x_pos]=='*') {
-                                map[bullet_y_pos][bullet_x_pos] = '.';
-                                break;
-                            }
-                            else if(map[bullet_y_pos][bullet_x_pos] == '#') break;
-                            else continue;
-                        }
-                    }
-                    else if(current_dir == '<') {
-                        while(bullet_x_pos>0) {
-                            if(map[bullet_y_pos][--bullet_x_pos]=='*') {
-                                map[bullet_y_pos][bullet_x_pos] = '.';
-                                break;
-                            }
-                            else if(map[bullet_y_pos][bullet_x_pos] == '#') break;
-                            else continue;
-                        }
+                    else if(a.charAt(i) == 'A' || a.charAt(i) == 'D' || a.charAt(i) == 'O' ||
+                            a.charAt(i) == 'P' || a.charAt(i) == 'Q' || a.charAt(i) == 'R') {
+                        if(b.charAt(i) == 'A' || b.charAt(i) == 'D' || b.charAt(i) == 'O' ||
+                            b.charAt(i) == 'P' || b.charAt(i) == 'Q' || b.charAt(i) == 'R') continue;
+                        else {flag = 1; break;}
                     }
                     else {
-                        while(bullet_x_pos < W-1) {
-                            if(map[bullet_y_pos][++bullet_x_pos]=='*') {
-                                map[bullet_y_pos][bullet_x_pos] = '.';
-                                break;
-                            }
-                            else if(map[bullet_y_pos][bullet_x_pos] == '#') break;
-                            else continue;
-                        }
+                        if(b.charAt(i) == a.charAt(i)) continue;
+                        else {flag = 1; break;}
                     }
                 }
+                System.out.print("#" + test_case + " ");
+                if(flag == 0) System.out.println("SAME");
+                else System.out.println("DIFF");
             }
-            System.out.print("#" + test_case + " ");
-            for(int y=0; y<H; y++) {
-                for(int x=0; x<W; x++) {
-                    System.out.print(map[y][x]);
-                }
-                System.out.println();
-            }
-        }
+        }       
     }
 }
 ```
