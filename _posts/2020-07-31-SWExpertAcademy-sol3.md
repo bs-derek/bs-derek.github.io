@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[SWEA] 3499. 퍼펙트 셔플"
+title:  "[SWEA] [S/W 문제해결 응용] 3일차 - 최적 경로"
 # subtitle: 
 categories: algorithm
 tags: 알고리즘 SWEA Java
@@ -9,7 +9,7 @@ comments: true
 published : true
 ---
 
-## SW Expert Academy - 3499. 퍼펙트 셔플
+## SW Expert Academy - [S/W 문제해결 응용] 3일차 - 최적 경로
 
 DFS 제대로 배우고 가지치기 나중에 업데이트 할 예정
 
